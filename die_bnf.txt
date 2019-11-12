@@ -1,0 +1,14 @@
+die_exp := (die_exp)
+die_exp := die_exp * die_exp
+die_exp := die_exp / die_exp
+die_exp := die_exp + die_exp
+die_exp := die_exp - die_exp
+
+die_exp := -die_exp
+
+die_exp := die
+die_exp := const
+
+die := const d const
+
+const := 1..
