@@ -1,10 +1,9 @@
 
-from die_func_node_type import DieFuncNodeType
+from dieparser import parser
 
 
 def main():
-  pass
-
-
+	parser.parse('(2d8 + 2) * 3d8')
+	
 if __name__ == '__main__':
-  print(DieFuncNodeType.multiply)
+	main()
