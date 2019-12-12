@@ -1,14 +1,19 @@
 
+from dieparser import parser
+from dielexer import lexer
+
+
 class DieFunction (object):
-  def __init__(self):
+  def __init__(self, st):
+    tokens = lexer.lex(st)
+    nodes = parser.parse(tokens)
+
+  def roll(self):
     pass
 
-def roll(self):
-  pass
+  # def get
+  #   pass
 
-# def get
-#   pass
-
-@property
-def value(self):
-  pass
+  @property
+  def value(self):
+    pass
