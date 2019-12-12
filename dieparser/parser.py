@@ -1,5 +1,6 @@
 
 from dielexer.token_type import TokenType
+from dieparser.parse_node import ParseNode
 
 
 def parse(tokens):
