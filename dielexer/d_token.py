@@ -3,4 +3,4 @@ class Token (object):
 		self.type = t_type
 		self.value = value
 	def __repr__(self):
-		return str(self.value)
+		return '[{}]\t{}'.format(self.type.name, self.value)

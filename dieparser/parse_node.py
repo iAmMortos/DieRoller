@@ -2,11 +2,11 @@
 from dielexer.token_type import TokenType
 
 class ParseNode (object):
-	def __init__(self, node_type):
+	def __init__(self, node_type, a, b=None, op=None):
 		self.type = node_type
-		self.a = None
-		self.b = None
-		self.op = None
+		self.a = a
+		self.b = b
+		self.op = op
 		self._value = None
 		
 	@property
@@ -33,4 +33,4 @@ class ParseNode (object):
 		elif self.type == TokenType.CONST:
 			return '%s' % self.a
 		elif self.type == TokenType.DIE:
-			return '%sd%s' % (self.a)
+			return '%sd%s' % (self.a, self.b)
